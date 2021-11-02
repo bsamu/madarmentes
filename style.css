@@ -1,0 +1,9 @@
+nav a {
+    display: inline-block;
+    padding: 1.5rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: aliceblue;
+    transition: all 0.5s linear;
+    opacity: 1;
+}
