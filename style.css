@@ -79,7 +79,13 @@ select{appearance: none !important; -webkit-appearance: none !important; border-
     display: block;
 }
 
-h2, p {}
+h2 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.4rem;
+}
 
 article {
     height: 50vh;
@@ -150,8 +156,8 @@ div#aid {
 @media screen and (max-width: 1024px) {div.artic h2, div.artic p {width: 60%; font-size: 0.5rem}};
 
 /* @media screen and (max-width: 1024px) {article.art {position: static; left: 0}}; */
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
     div.artic {
       display: block;
     }
-};
+}; */
