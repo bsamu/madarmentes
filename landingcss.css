@@ -17,23 +17,34 @@ select{appearance: none !important; -webkit-appearance: none !important; border-
 
 /* #214185(kék) #FCE181(sárga) #FEF9C7(világossárga) #EDEAE5(szürke)*/
 
+* {
+    box-sizing: border-box;
+}
+
 body {
-    background-image: linear-gradient(180deg, rgba(237,234,229,1) 0%, rgba(252,225,129,1) 35%, rgba(33,65,133,1) 100%);;
+    background-image: linear-gradient(180deg, rgba(237,234,229,1) 0%, rgba(175,232,216,1) 50%, rgba(33,65,133,1) 100%);
+    /* background-image: linear-gradient(180deg, rgba(237,234,229,1) 0%, rgba(252,225,129,1) 35%, rgba(33,65,133,1) 100%); */
+    font-family: 'Arima Madurai', cursive;
+    line-height: 2.8vw;
+    font-size: 0.8rem;
+    /* text-indent: 0.5rem; */
+    /* white-space: nowrap; */
 }
 
 header {
     position: relative;
-    min-height: 30vh;
+    min-height: 10vw;
 }
 
 section {
-    min-height: 50vh;
+    min-height: 70vh;
 }
 
-footer {
+/* footer {
     position: relative;
     min-height: 20vh;
-}
+    max-height: 20vh;
+} */
 
 #headerEl {
 
@@ -57,14 +68,39 @@ footer {
 
 }
 
+/* #container {
+    position: relative;
+    width: 50%;
+} */
+
+#negroDiv:hover #negro {
+    opacity: 0.3;
+}
+
+#negroDiv:hover #middle {
+    opacity: 1;
+}
+
+#middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 25vw;
+    right: 0;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+
 #aid {
     position: absolute;
     top: 30vh;
     left: 50%;
     z-index: 1;
     transform: translate(-50%, 0);
-    color: brown;
+    color: #214185;
     font-size: 3vw;
+    font-weight: bold;
+    background-color: black;
 }
 
 #aidDiv {
@@ -101,9 +137,19 @@ footer {
     /* height: 50vh; */
 
     margin-right: 2vw;
+    border-radius: 3vw;
+    box-shadow: 2vw 2vw 1vw -0.5vw rgba(0, 0, 0, 0.5);
+
+    opacity: 1;
+    /* display: block; */
+    /* width: 100%; */
+    /* height: auto; */
+    transition: .5s ease;
+    backface-visibility: hidden;
 }
 
 #giveMoney {
+    line-height: 3.2vw;
     font-size: 3vw;
     font-weight: bold;
     font-style: italic;
@@ -117,19 +163,21 @@ footer {
     font-size: 2vw;
 }
 
-/* #footerEl {
-    
-} */
+#fakeFooter {
+    position: relative;
+    height: 20vh;
+}
 
-#footerEl p {
+#fakeFooter p {
     position: absolute;
-    bottom: 1vw;
+    bottom: 0;
     left: 50%;
 
     font-size: 1.5vw;
     text-align: center;
     
     transform: translate(-50%, 0);
+    /* overflow-y: auto; */
 }
 
 #owner {
@@ -137,3 +185,4 @@ footer {
 }
 
 /* @media screen and (max-width: 420px) {p#title {width: 60%; font-size: 0.5rem}}; */
+
