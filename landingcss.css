@@ -1,0 +1,122 @@
+* {margin:0;padding:0;border:0;background:transparent;outline:none;text-decoration:none;outline:none;font-family:inherit;box-sizing:border-box;}
+ol, ul, li {list-style:none;display:block;}
+table {border-collapse: collapse;border-spacing:0;}
+a img {border: none;}
+
+button,
+a{cursor: pointer; color: inherit;}
+
+textarea{resize: none;}
+
+button,
+input,
+textarea,
+select{appearance: none !important; -webkit-appearance: none !important; border-radius: 0;}
+
+/* end of css reset */
+
+/* #214185(kék) #FCE181(sárga) #FEF9C7(világossárga) #EDEAE5(szürke)*/
+
+body {
+    background-image: linear-gradient(180deg, rgba(237,234,229,1) 0%, rgba(252,225,129,1) 35%, rgba(33,65,133,1) 100%);;
+}
+
+header {
+    position: relative;
+    min-height: 30vh;
+}
+
+section {
+    min-height: 50vh;
+}
+
+footer {
+    min-height: 20vh;
+}
+
+#headerEl {
+
+}
+
+#logo {
+    width: 10vw;
+    margin-top: 2vw;
+    margin-left: 2vw;
+}
+
+#title {
+    position: absolute;
+    top: 3.8vw;
+    left: 15vw;
+    font-size: 3vw;
+    font-weight: bolder;
+}
+
+#sectionEl {
+
+}
+
+#aid {
+    position: absolute;
+    top: 30vh;
+    left: 50%;
+    z-index: 1;
+    transform: translate(-50%, 0);
+    color: brown;
+    font-size: 3vw;
+}
+
+#aidDiv {
+    position: absolute;
+    bottom: 20vh;
+    margin-left: 2vw;
+}
+
+#aidDiv p {
+    width: 45vw;
+}
+
+#negroDiv {
+    position: relative;
+}
+
+#negro {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50vw;
+    margin-right: 2vw;
+}
+
+#giveMoney {
+    font-size: 3vw;
+    font-weight: bold;
+    font-style: italic;
+}
+
+#desc {
+    font-size: 2vw;
+}
+
+#buttonEl {
+    font-size: 2vw;
+}
+
+#footerEl {
+    
+}
+
+#footerEl p {
+    bottom: 2vw;
+    left: 50%;
+    font-size: 1vw;
+    
+    position: absolute;
+    transform: translate(-50%, 0);
+}
+
+#owner {
+
+}
+
+/* @media screen and (max-width: 420px) {p#title {width: 60%; font-size: 0.5rem}}; */
