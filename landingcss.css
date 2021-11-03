@@ -84,7 +84,10 @@ footer {
     position: absolute;
     top: 0;
     right: 0;
+
     width: 50vw;
+    /* height: 50vh; */
+
     margin-right: 2vw;
 }
 
@@ -107,11 +110,13 @@ footer {
 }
 
 #footerEl p {
-    bottom: 2vw;
-    left: 50%;
-    font-size: 1.5vw;
-    
     position: absolute;
+    bottom: 1vw;
+    left: 50%;
+
+    font-size: 1.5vw;
+    text-align: center;
+    
     transform: translate(-50%, 0);
 }
 
