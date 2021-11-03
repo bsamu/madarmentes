@@ -31,6 +31,7 @@ section {
 }
 
 footer {
+    position: relative;
     min-height: 20vh;
 }
 
@@ -70,6 +71,7 @@ footer {
     position: absolute;
     bottom: 20vh;
     margin-left: 2vw;
+    max-width: 50vw;
 }
 
 #aidDiv p {
@@ -78,6 +80,12 @@ footer {
 
 #negroDiv {
     position: relative;
+    padding: 0;
+
+    /* margin-right: 2vw; */
+
+    min-height: 50vh;
+    /* min-width: 50vw; */
 }
 
 #negro {
@@ -85,7 +93,11 @@ footer {
     top: 0;
     right: 0;
 
-    width: 50vw;
+    /* width: 50vw; */
+    /* max-height: 50vh; */
+    max-width: 50vw;
+    /* min-width: 50vw; */
+    /* min-height: 50vh; */
     /* height: 50vh; */
 
     margin-right: 2vw;
@@ -105,9 +117,9 @@ footer {
     font-size: 2vw;
 }
 
-#footerEl {
+/* #footerEl {
     
-}
+} */
 
 #footerEl p {
     position: absolute;
@@ -121,7 +133,7 @@ footer {
 }
 
 #owner {
-
+    font-weight: bold;
 }
 
 /* @media screen and (max-width: 420px) {p#title {width: 60%; font-size: 0.5rem}}; */
