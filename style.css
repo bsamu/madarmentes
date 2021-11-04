@@ -15,13 +15,207 @@ select{appearance: none !important; -webkit-appearance: none !important; border-
 
 /* end of css reset */
 
-/* html {
-    display: block;
-} */
+:root {
+    --body: /*#ff533e; */ #000000;
+    --mouth: #000000;
+    --feather: #939393;
+    --beak-top: /*#e9581a; */ rgb(207, 207, 7);
+    --beak-down: /*#aa4c21; */ rgb(212, 212, 21);
+    --leg: /*#00adef; */ rgb(177, 118, 9);
+    --body-color: #e3edf7;
+}
+
+body {
+    background: /*var(--body-color)*/ #000000;
+    /* font-family: sans-serif; */
+    height: 100vh;
+    width: auto;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+
+
+}
+section {
+    height: auto;
+}
+.container {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-34%, 0);
+}
+
+ .body,  .mouth,  .feather,  .tail, .beak, .mouth::before, .mouth::after, .leg, .leg::after, .leg::before {
+    position: absolute;
+}
+ .body,  .mouth, .feather, .beak, .mouth::before, .mouth::after  {
+    border-radius: 50%;
+}
+
+.body {
+    top: 26px;
+    left: 50px;
+    height: 180px;
+    width: 200px;
+    transform: rotate(-17deg);
+    background: linear-gradient(to bottom, transparent 0%, transparent 20%, var(--body) 20%);
+    z-index: 2;
+}
+
+.mouth {    
+    background:  var(--mouth);
+    top: 20px;
+    left: -175px;
+    width: 100px;
+    height: 100px;
+    transform: rotate(-17deg);
+    z-index: 5;
+    animation: animate-mouth 1.5s forwards;
+    animation-delay: 2s;
+}
+
+@keyframes animate-mouth {
+    100% {
+        left: 175px;
+    }
+}
+.mouth::before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    background: white;
+    position: absolute;
+    top: 20px;
+    left: 40px;
+}
+.mouth::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: black;
+    position: absolute;
+    top: 30px;
+    left: 55px;
+    animation: animate-eye 1s infinite;
+    animation-delay: 4s;
+}
+
+@keyframes animate-eye {
+    50% {
+        height: 5px;
+    }
+}
+
+
+.feather {
+    z-index: 4;
+    left: 44px;
+    top: -206px;
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(to bottom, transparent 0%, transparent 50%, var(--feather) 50%);
+    transform: rotate(-17deg);
+    animation: animate-feather 1.5s forwards;
+    animation-delay: 2s;
+}
+
+@keyframes animate-feather {
+    100% {
+        top: -6px;
+    }
+}
+
+.tail {
+    width: 150px;
+    height: 60px;
+    background-color: var(--mouth);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%);
+    top: 92px;
+    left: 324px;
+    transform: rotate(-17deg);
+    z-index: 3;
+    animation: animate-tail 1.5s forwards;
+    animation-delay: 2s;
+}
+@keyframes animate-tail {
+    100% {
+        left: -24px;
+    }
+}
+.beak {
+    height: 100px;
+    width: 100px;
+    background: linear-gradient(to bottom, var(--beak-top) 0%, var(--beak-top) 15%, transparent 15% );
+    left: 224px;
+    top: 240px;
+    z-index: -1;
+    transform: rotate(-17deg);
+    animation: animate-beak 1.5s forwards;
+    animation-delay: 2s;
+}
+@keyframes animate-beak {
+    100% {
+        top: 40px;
+    }
+}
+.leg {
+    background: var(--leg);
+    height: 50px;
+    width: 10px;
+    border-radius: 10px;
+    top: 515px;
+    left: 125px;
+    transform: rotate(-15deg);
+    z-index: 1;
+    animation: animate-leg 1.5s forwards;
+    animation-delay: 2s;
+}
+@keyframes animate-leg {
+    100% {
+        top: 215px;
+    }
+}
+.leg::before {
+    bottom: -8px;
+    content: "";
+    width: 40px;
+    height: 9px;
+    background: var(--leg);
+    border-radius: 10px;
+    transform: rotate(15deg);
+    z-index: -1;
+}
+.leg::after {
+    top: -8px;
+    content: "";
+    width: 30px;
+    height: 9px;
+    background: var(--leg);
+    border-radius: 10px;
+    transform: rotate(-15deg);
+    z-index: -1;
+}
+
+/* End of bird animation */
+
+body {
+    background-image: linear-gradient(180deg, rgba(237,234,229,1) 0%, rgba(175,232,216,1) 50%, rgba(33,65,133,1) 100%);
+    font-family: 'Arima Madurai', cursive;
+    line-height: 2.8rem;
+    font-size: 0.8rem;
+}
+
+/* Beginning of navbar */
 
 .navbar {
     overflow: hidden;
-    background-color: #333;
+    background-color: transparent;
+    float: right;
+    margin-top: 1.5vw;
+    margin-right: 2vw;
 }
   
 .navbar a {
@@ -31,6 +225,7 @@ select{appearance: none !important; -webkit-appearance: none !important; border-
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    
 }
   
 .dropdown {
@@ -47,10 +242,15 @@ select{appearance: none !important; -webkit-appearance: none !important; border-
     background-color: inherit;
     font-family: inherit;
     margin: 0;
+
+    line-height: 2.8rem;
 }
+
   
 .navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: red;
+    background-color: rgb(33,65,133);
+    color: floralwhite;
+    border-radius: 0.7vw;
 }
   
 .dropdown-content {
@@ -60,6 +260,7 @@ select{appearance: none !important; -webkit-appearance: none !important; border-
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    border-radius: 0.7vw;
 }
   
 .dropdown-content a {
@@ -72,92 +273,54 @@ select{appearance: none !important; -webkit-appearance: none !important; border-
 }
   
 .dropdown-content a:hover {
-    background-color: #ddd;
+    background-color: rgb(150, 150, 150);
 }
   
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
-h2 {
-    font-size: 2rem;
+/* End of navbar */
+
+#logo {
+    width: 10vw;
+    margin-top: 2vw;
+    margin-left: 2vw;
 }
 
-p {
-    font-size: 1.4rem;
+#title {
+    position: absolute;
+    top: 2.5vw;
+    left: 15vw;
+    font-size: 2.5vw;
+    font-weight: bolder;
 }
 
-article {
-    height: 50vh;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-article.art {
+#button-div {
     position: relative;
-    margin-bottom: 20vh;
 }
 
-.picture {
+#button-action {
     position: absolute;
-    margin-bottom: 15px;
+    top: -20vh;
+    left: 50vw;
+    transform: translate(-50%, 0);
+    background-color: #9fedd7;
+    width: 180px;
+    height: 80px;
+    border-radius: 10vw;
+    box-shadow: -4px -4px 4px 4px rgb(26, 61, 61);
+    transition: 1s;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgba(33,65,133,1);
 }
 
-#landing img {
-    top: 0;
-    left: 0;
-    width: 45%;
+#button-action:hover {
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 100px;
+    font-size: 1.4rem;
+    box-shadow: 4px 4px 4px 4px rgb(26, 61, 61);
+    font-weight: 800;
 }
-
-#newsImg img {
-    top: 0;
-    right: 0;
-    width: 45%;
-}
-
-#aidImg img {
-    top: 0;
-    left: 0;
-    width: 45%;
-}
-
-div.artic {
-    position: absolute;
-    height: 50vh;
-    width: 50vw;
-    
-}
-
-div.artic h2 {
-    margin-top: 200px;
-    margin-bottom: 15px;
-    width: 80%;
-    /* display: inline-block; */
-    /* vertical-align: auto; */
-    /* margin: 0 auto; */
-}
-
-div.artic p {
-    width: 80%;
-}
-
-div#aboutUs {
-    right: 0;
-}
-
-div#news {
-    left: 0;
-}
-
-div#aid {
-    right: 0;
-}
-
-@media screen and (max-width: 1024px) {div.artic h2, div.artic p {width: 60%; font-size: 0.5rem}};
-
-/* @media screen and (max-width: 1024px) {article.art {position: static; left: 0}}; */
-/* @media screen and (max-width: 600px) {
-    div.artic {
-      display: block;
-    }
-}; */
