@@ -1,0 +1,188 @@
+* {margin:0;padding:0;border:0;background:transparent;outline:none;text-decoration:none;outline:none;font-family:inherit;box-sizing:border-box;}
+ol, ul, li {list-style:none;display:block;}
+table {border-collapse: collapse;border-spacing:0;}
+a img {border: none;}
+
+button,
+a{cursor: pointer; color: inherit;}
+
+textarea{resize: none;}
+
+button,
+input,
+textarea,
+select{appearance: none !important; -webkit-appearance: none !important; border-radius: 0;}
+
+/* end of css reset */
+
+/* #214185(kék) #FCE181(sárga) #FEF9C7(világossárga) #EDEAE5(szürke)*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(180deg, rgba(237,234,229,1) 0%, rgba(175,232,216,1) 50%, rgba(33,65,133,1) 100%);
+    /* background-image: linear-gradient(180deg, rgba(237,234,229,1) 0%, rgba(252,225,129,1) 35%, rgba(33,65,133,1) 100%); */
+    font-family: 'Arima Madurai', cursive;
+    line-height: 2.8vw;
+    font-size: 0.8rem;
+    /* text-indent: 0.5rem; */
+    /* white-space: nowrap; */
+}
+
+header {
+    position: relative;
+    min-height: 30vh;
+}
+
+section {
+    min-height: 70vh;
+}
+
+/* footer {
+    position: relative;
+    min-height: 20vh;
+    max-height: 20vh;
+} */
+
+#headerEl {
+
+}
+
+#logo {
+    width: 10vw;
+    margin-top: 2vw;
+    margin-left: 2vw;
+}
+
+#title {
+    position: absolute;
+    top: 3.8vw;
+    left: 15vw;
+    font-size: 3vw;
+    font-weight: bolder;
+}
+
+#sectionEl {
+
+}
+
+/* #container {
+    position: relative;
+    width: 50%;
+} */
+
+#negroDiv:hover #negro {
+    opacity: 0.3;
+}
+
+#negroDiv:hover #middle {
+    opacity: 1;
+}
+
+#middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+
+#aid {
+    position: absolute;
+    top: 30vh;
+    left: 50%;
+    z-index: 1;
+    transform: translate(-50%, 0);
+    color: #214185;
+    font-size: 3vw;
+    font-weight: bold;
+    background-color: black;
+}
+
+#aidDiv {
+    position: absolute;
+    bottom: 20vh;
+    margin-left: 2vw;
+    max-width: 50vw;
+}
+
+#aidDiv p {
+    width: 45vw;
+}
+
+#negroDiv {
+    position: relative;
+    padding: 0;
+
+    /* margin-right: 2vw; */
+
+    min-height: 50vh;
+    /* min-width: 50vw; */
+}
+
+#negro {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    /* width: 50vw; */
+    /* max-height: 50vh; */
+    max-width: 50vw;
+    /* min-width: 50vw; */
+    /* min-height: 50vh; */
+    /* height: 50vh; */
+
+    margin-right: 2vw;
+    border-radius: 3vw;
+    box-shadow: 2vw 2vw 1vw -0.5vw rgba(0, 0, 0, 0.5);
+
+    opacity: 1;
+    /* display: block; */
+    /* width: 100%; */
+    /* height: auto; */
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+#giveMoney {
+    line-height: 3.2vw;
+    font-size: 3vw;
+    font-weight: bold;
+    font-style: italic;
+}
+
+#desc {
+    font-size: 2vw;
+}
+
+#buttonEl {
+    font-size: 2vw;
+}
+
+#fakeFooter {
+    position: relative;
+    height: 20vh;
+}
+
+#fakeFooter p {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+
+    font-size: 1.5vw;
+    text-align: center;
+    
+    transform: translate(-50%, 0);
+    /* overflow-y: auto; */
+}
+
+#owner {
+    font-weight: bold;
+}
+
+/* @media screen and (max-width: 420px) {p#title {width: 60%; font-size: 0.5rem}}; */
+
