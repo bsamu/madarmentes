@@ -1,0 +1,163 @@
+* {margin:0;padding:0;border:0;background:transparent;outline:none;text-decoration:none;outline:none;font-family:inherit;box-sizing:border-box;}
+ol, ul, li {list-style:none;display:block;}
+table {border-collapse: collapse;border-spacing:0;}
+a img {border: none;}
+
+button,
+a{cursor: pointer; color: inherit;}
+
+textarea{resize: none;}
+
+button,
+input,
+textarea,
+select{appearance: none !important; -webkit-appearance: none !important; border-radius: 0;}
+
+/* end of css reset */
+
+/* html {
+    display: block;
+} */
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+}
+  
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+  
+.dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: black;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+  
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+  
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.4rem;
+}
+
+article {
+    height: 50vh;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+article.art {
+    position: relative;
+    margin-bottom: 20vh;
+}
+
+.picture {
+    position: absolute;
+    margin-bottom: 15px;
+}
+
+#landing img {
+    top: 0;
+    left: 0;
+    width: 45%;
+}
+
+#newsImg img {
+    top: 0;
+    right: 0;
+    width: 45%;
+}
+
+#aidImg img {
+    top: 0;
+    left: 0;
+    width: 45%;
+}
+
+div.artic {
+    position: absolute;
+    height: 50vh;
+    width: 50vw;
+    
+}
+
+div.artic h2 {
+    margin-top: 200px;
+    margin-bottom: 15px;
+    width: 80%;
+    /* display: inline-block; */
+    /* vertical-align: auto; */
+    /* margin: 0 auto; */
+}
+
+div.artic p {
+    width: 80%;
+}
+
+div#aboutUs {
+    right: 0;
+}
+
+div#news {
+    left: 0;
+}
+
+div#aid {
+    right: 0;
+}
+
+@media screen and (max-width: 1024px) {div.artic h2, div.artic p {width: 60%; font-size: 0.5rem}};
+
+/* @media screen and (max-width: 1024px) {article.art {position: static; left: 0}}; */
+/* @media screen and (max-width: 600px) {
+    div.artic {
+      display: block;
+    }
+}; */
