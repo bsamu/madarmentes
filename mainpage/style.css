@@ -14,6 +14,167 @@ textarea,
 select{appearance: none !important; -webkit-appearance: none !important; border-radius: 0;}
 
 /* end of css reset */
+
+/* .container {
+	z-index: 3;
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	 align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	min-height: 35rem;
+	background-blend-mode: soft-light;
+	background-size: cover;
+	background-position: center center;
+	padding: 2rem;
+}
+
+.bird {
+	background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/174479/bird-cells-new.svg);
+	background-size: auto 100%;
+	width: 88px;
+	height: 125px;
+	will-change: background-position;
+
+	animation-name: fly-cycle;
+	animation-timing-function: steps(10);
+	animation-iteration-count: infinite;
+
+	&--one {
+		animation-duration: 1s;
+		animation-delay: -0.5s;
+	}
+
+	&--two {
+		animation-duration: 0.9s;
+		animation-delay: -0.75s;
+	}
+
+	&--three {
+		animation-duration: 1.25s;
+		animation-delay: -0.25s;
+	}
+
+	&--four {
+		animation-duration: 1.1s;
+		animation-delay: -0.5s;
+	}
+
+}
+
+.bird-container {
+	position: absolute;
+	top: 20%;
+	left: -10%;
+	transform: scale(0) translateX(-10vw);
+	will-change: transform;
+
+	animation-name: fly-right-one;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+
+	&--one {
+		animation-duration: 15s;
+		animation-delay: 0;
+	}
+
+	&--two {
+		animation-duration: 16s;
+		animation-delay: 1s;
+	}
+
+	&--three {
+		animation-duration: 14.6s;
+		animation-delay: 9.5s;
+	}
+
+	&--four {
+		animation-duration: 16s;
+		animation-delay: 10.25s;
+	}
+
+
+@keyframes fly-cycle {
+
+	100% {
+		background-position: -900px 0;
+	}
+
+}
+
+@keyframes fly-right-one {
+
+	0% {
+		transform: scale(0.3) translateX(-10vw);
+	}
+
+	10% {
+		transform: translateY(2vh) translateX(10vw) scale(0.4);
+	}
+
+	20% {
+		transform: translateY(0vh) translateX(30vw) scale(0.5);
+	}
+
+	30% {
+		transform: translateY(4vh) translateX(50vw) scale(0.6);
+	}
+
+	40% {
+		transform: translateY(2vh) translateX(70vw) scale(0.6);
+	}
+
+	50% {
+		transform: translateY(0vh) translateX(90vw) scale(0.6);
+	}
+
+	60% {
+		transform: translateY(0vh) translateX(110vw) scale(0.6);
+	}
+
+	100% {
+		transform: translateY(0vh) translateX(110vw) scale(0.6);
+	}
+
+}
+
+@keyframes fly-right-two {
+
+	0% {
+		transform: translateY(-2vh) translateX(-10vw) scale(0.5);
+	}
+
+	10% {
+		transform: translateY(0vh) translateX(10vw) scale(0.4);
+	}
+
+	20% {
+		transform: translateY(-4vh) translateX(30vw) scale(0.6);
+	}
+
+	30% {
+		transform: translateY(1vh) translateX(50vw) scale(0.45);
+	}
+
+	40% {
+		transform: translateY(-2.5vh) translateX(70vw) scale(0.5);
+	}
+
+	50% {
+		transform: translateY(0vh) translateX(90vw) scale(0.45);
+	}
+
+	51% {
+		transform: translateY(0vh) translateX(110vw) scale(0.45);
+	}
+
+	100% {
+		transform: translateY(0vh) translateX(110vw) scale(0.45);
+	}
+
+} */
+
 /* End of bird animation */
 
 
@@ -23,9 +184,10 @@ body {
     line-height: 2.8rem;
     font-size: 0.8rem;
     height: 640vh;
+    width: 95vw;
     background-attachment: fixed;
     background-image: linear-gradient(180deg, rgba(175,232,216,1) 28%, rgba(33,65,133,1) 100%);
-    
+
 }
 
 /* Beginning of navbar */
@@ -48,7 +210,7 @@ header {
     right: 0;
     z-index: 2;
 }
-  
+
 .navbar a {
     float: left;
     font-size: 16px;
@@ -56,16 +218,16 @@ header {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    
+
 }
-  
+
 .dropdown {
     float: left;
     overflow: hidden;
 }
-  
+
 .dropdown .dropbtn {
-    font-size: 16px;  
+    font-size: 16px;
     border: none;
     outline: none;
     color: black;
@@ -77,13 +239,13 @@ header {
     line-height: 2.8rem;
 }
 
-  
+
 .navbar a:hover, .dropdown:hover .dropbtn {
     background-color: rgb(33,65,133);
     color: floralwhite;
     border-radius: 0.7vw;
 }
-  
+
 .dropdown-content {
     display: none;
     position: fixed;
@@ -93,7 +255,7 @@ header {
     z-index: 1;
     border-radius: 0.7vw;
 }
-  
+
 .dropdown-content a {
     float: none;
     color: black;
@@ -102,11 +264,11 @@ header {
     display: block;
     text-align: left;
 }
-  
+
 .dropdown-content a:hover {
     background-color: rgb(150, 150, 150);
 }
-  
+
 .dropdown:hover .dropdown-content {
     display: block;
 }
@@ -134,7 +296,8 @@ header {
 }
 
 section {
-    
+    position: relative;
+    height: 100vh;
 }
 
 .goLeft {
@@ -156,10 +319,111 @@ section {
 
 .birdPic {
     max-width: 50vw;
-    
+
     /* margin-right: 2.5vw; */
 
 }
+
+div.goCenter {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 8vw;
+    left: 50%;
+    display: inline-block;
+    text-align: center;
+    /* margin-left: -50vw; */
+    transform: translate(-50%, 0);
+
+}
+
+.goCenter button {
+    margin: 5vw 3vw 3vw 3vw;
+    width: 18vw;
+    height: 5vw;
+    background-color: rgba(33,65,133,0.8);
+    text-align: center;
+    border-radius: 5px;
+    color: rgba(237,234,229,1);
+    box-shadow: -4px -4px 4px 4px rgb(26, 61, 61);
+    transition: 1s;
+    font-size: 1.2rem;
+    font-weight: 600;
+
+}
+
+div.goCenter h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+/* h2.goCenter {
+    display: inline-block;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 800;
+} */
+
+div.goCenter img {
+    width: 18vw;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    border-radius: 5px;
+    box-shadow: -4px -4px 4px 4px rgb(26, 61, 61);
+}
+
+.goCenter button:hover {
+    transform: translate(0%, -15%);
+    font-size: 1.4rem;
+    box-shadow: 4px 4px 4px 4px rgb(26, 61, 61);
+    font-weight: 800;
+}
+
+.contact {
+    width: 50vw;
+    margin-left: 14vw;
+    margin-top: 2vw;
+    font-family: 'Arima Madurai', cursive;
+    font-size: 1rem;
+    line-height: 1.7rem;
+}
+
+.map {
+    margin-left: 8vw;
+    margin-top: 2vw;
+    font-family: 'Arima Madurai', cursive;
+}
+
+section div h2 {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 2vw;
+
+}
+
+.injured {
+    margin-top: 7vw;
+}
+
+h2 span {
+    width: 30vw;
+    height: 10vh;
+    padding: 0.7vw;
+    background-color: rgba(175,232,216,0.5);
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+}
+
+h2 span:hover {
+    background-color: rgb(33,65,133);
+    color: rgba(237,234,229,1);
+}
+
+.icons {
+
+}
+
 
 /* Icons beginning */
 
@@ -171,16 +435,16 @@ section {
     text-decoration: none;
     margin: 5px 2px;
   }
-  
+
   .fa:hover {
       opacity: 0.7;
   }
-  
+
   .fa-facebook {
     background: #3B5998;
     color: white;
   }
-  
+
   .fa-twitter {
     background: #55ACEE;
     color: white;
@@ -196,4 +460,4 @@ section {
     color: white;
   } */
 
-  /* Icons ending */ 
+  /* Icons ending */
