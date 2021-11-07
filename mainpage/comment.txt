@@ -10,5 +10,8 @@ added URL-s to Események button-s n img-s
 deleted "onclick" from map
 .goCenter img:hover added
 
+ctrl+ü-ed out font-awesomes
+try folder added (phone-navbar)
+
 problems to solve: width of page
 }
