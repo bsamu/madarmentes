@@ -383,6 +383,10 @@ div.goCenter img {
     box-shadow: -4px -4px 4px 4px rgb(26, 61, 61);
 }
 
+.goCenter img:hover {
+    cursor: pointer;
+}
+
 .goCenter button:hover {
     transform: translate(0%, -15%);
     font-size: 1.4rem;
@@ -448,6 +452,10 @@ h2 span:hover {
 
 .icons img:last-child {
     margin-right: 0;
+}
+
+.icons img:hover {
+    cursor: pointer;
 }
 
 

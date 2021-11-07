@@ -3,11 +3,12 @@
 goLeftLast class added (bc of height)
 body height modified from 100vh (no need)
 goLeft/Right and section height modified from 100vh (too big spaces between sections)
-added icons below map
+added icons below map + hover
 section div p added
 <br> removed
 added URL-s to Események button-s n img-s
 deleted "onclick" from map
+.goCenter img:hover added
 
 problems to solve: width of page
 }
