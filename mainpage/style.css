@@ -412,6 +412,11 @@ section div h2 {
 
 }
 
+section div p {
+    line-height: 3vh;
+    margin-bottom: 1vh;
+}
+
 .injured {
     margin-top: 7vw;
 }
