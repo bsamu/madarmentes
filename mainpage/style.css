@@ -183,7 +183,7 @@ body {
     font-family: 'Arima Madurai', cursive;
     line-height: 2.8rem;
     font-size: 0.8rem;
-    height: 640vh;
+    /* height: 0vh; */
     width: 95vw;
     background-attachment: fixed;
     background-image: linear-gradient(180deg, rgba(175,232,216,1) 28%, rgba(33,65,133,1) 100%);
@@ -297,12 +297,22 @@ header {
 
 section {
     position: relative;
-    height: 100vh;
+    height: 78vh;
 }
 
 .goLeft {
     position: relative;
-    height: 100vh;
+    height: 78vh;
+    /* margin-top: 20vw; */
+    transform: translate(0, 30%);
+    display: inline-block;
+    width: 42vw;
+    margin-left: 2.5vw;
+}
+
+.goLeftLast {
+    position: relative;
+    height: 55vh;
     /* margin-top: 20vw; */
     transform: translate(0, 30%);
     display: inline-block;
@@ -326,7 +336,7 @@ section {
 
 div.goCenter {
     position: absolute;
-    height: 100vh;
+    height: 78vh;
     width: 100vw;
     top: 8vw;
     left: 50%;
@@ -421,7 +431,18 @@ h2 span:hover {
 }
 
 .icons {
+    width: 500px;
+    margin-left: 1vw;
+}
 
+.icons img {
+    margin-top: 2vh;
+    /* margin-left: 1vw; */
+    margin-right: 2.7vw;
+}
+
+.icons img:last-child {
+    margin-right: 0;
 }
 
 

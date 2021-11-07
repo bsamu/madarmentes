@@ -1,0 +1,9 @@
+11.07:
+{
+goLeftLast class added (bc of height)
+body height modified from 100vh (no need)
+goLeft/Right and section height modified from 100vh (too big spaces between sections)
+added icons below map
+
+problem to solve: width of page
+}
