@@ -309,6 +309,7 @@ section {
     width: 38vw;
     margin-left: 2.5vw;
     margin-right: 3vw;
+    margin-top: 3vw;
 }
 
 .goLeftLast {
@@ -319,6 +320,7 @@ section {
     display: inline-block;
     width: 45vw;
     margin-left: 2.5vw;
+    margin-top: 3vw;
 }
 
 .goRight {
@@ -330,9 +332,17 @@ section {
 
 .birdPic {
     max-width: 50vw;
-
+    border-radius: 2vw;
+    
     /* margin-right: 2.5vw; */
+}
 
+#negro {
+    cursor: pointer;
+}
+
+#negro:hover {
+    box-shadow: 4px 4px 4px 4px rgb(33,65,133);
 }
 
 div.goCenter {
@@ -345,7 +355,10 @@ div.goCenter {
     text-align: center;
     /* margin-left: -50vw; */
     transform: translate(-50%, 0);
+    margin-top: 6vw;
 
+   
+    
 }
 
 .goCenter button {
@@ -360,13 +373,14 @@ div.goCenter {
     transition: 1s;
     font-size: 1.2rem;
     font-weight: 600;
-
+    
 }
 
 div.goCenter h2 {
     text-align: center;
     font-size: 2rem;
     font-weight: 800;
+    margin-bottom: -2vw;
 }
 
 /* h2.goCenter {
@@ -420,7 +434,7 @@ section div h2 {
 }
 
 section div p {
-    line-height: 4vh;
+    line-height: 5vh;
     margin-bottom: 1vh;
     font-size: 1.5rem;
     text-align: justify;
@@ -479,13 +493,13 @@ h2 span:hover {
     margin-right: 2vw;
 }
 
-.icons img:first-child {
-    /* margin-left: 1vw; */
-}
+/* .icons img:first-child {
+    margin-left: 1vw;
+} */
 
-.icons img:last-child {
-    /* margin-right: 0; */
-}
+/* .icons img:last-child {
+    margin-right: 0;
+} */
 
 .icons img:hover {
     cursor: pointer;
