@@ -316,7 +316,7 @@ section {
     /* margin-top: 20vw; */
     transform: translate(0, 30%);
     display: inline-block;
-    width: 42vw;
+    width: 45vw;
     margin-left: 2.5vw;
 }
 
@@ -404,6 +404,7 @@ div.goCenter img {
 }
 
 .map {
+    position: relative;
     max-width: 50vw;
     margin-left: 8vw;
     margin-top: 2vw;
@@ -457,23 +458,31 @@ h2 span:hover {
 }
 
 .icons {
+    position: absolute;
     max-width: 100%;
-    margin-left: 1vw;
-    margin: auto;
+    bottom: 0;
+    left: 0;
+    transform: translate(10%, 150%);
+    /* margin-left: 1vw; */
+    /* margin: auto; */
+    /* overflow: auto; */
 }
 
 .icons img {
-    margin-top: 2vh;
+    /* display: table-cell;
+    vertical-align: middle; */
+    /* margin-top: 2vh; */
     /* margin-left: 1vw; */
-    margin-right: 2.5vw;
+    /* margin-right: 2.45vw; */
+    margin-right: 2vw;
 }
 
 .icons img:first-child {
-    margin-left: 1vw;
+    /* margin-left: 1vw; */
 }
 
 .icons img:last-child {
-    margin-right: 0;
+    /* margin-right: 0; */
 }
 
 .icons img:hover {
