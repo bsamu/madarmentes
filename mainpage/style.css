@@ -557,22 +557,25 @@ h2 span:hover {
     display: block;
     overflow: hidden;
     background-color: transparent;
+    z-index: 20;
 }
   
 .respNavBar a {
     float: right;
     display: block;
-    /* background-color: inherit; */
+    background-color: rgba(175,232,216,1);
     color: black;
     text-align: center;
     padding: 14px 8px;
     text-decoration: none;
     font-size: 14px;
+    z-index: 20;
 }
   
 .respNavBar a:hover {
     background-color: rgb(194, 180, 180);
     color: black;
+    z-index: 20;
 }
   
 .respNavBar a.active {
@@ -626,6 +629,7 @@ h2 span:hover {
         line-height: 1.3rem;
         margin-top: 6px;
         margin-left: 13px;
+        z-index: 2;
     }
 
     #logo {
@@ -633,6 +637,7 @@ h2 span:hover {
         /* margin: 0; */
         margin-top: 5px;
         margin-left: 5px;
+        z-index: 2;
     }
 
     .goLeft {
