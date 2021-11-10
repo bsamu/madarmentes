@@ -280,6 +280,62 @@ body {
     display: block;
 }
 
+.respNavBar {
+    display: block;
+    overflow: hidden;
+    background-color: transparent;
+    z-index: 20;
+}
+  
+.respNavBar a {
+    float: right;
+    display: block;
+    background-color: rgba(175,232,216,1);
+    color: black;
+    text-align: center;
+    padding: 14px 8px;
+    text-decoration: none;
+    font-size: 14px;
+    z-index: 20;
+}
+  
+.respNavBar a:hover {
+    background-color: rgba(237,234,229,1);
+    color: black;
+    z-index: 20;
+}
+  
+.respNavBar a.active {
+    background-color: #16bd80;
+    color: white;
+}
+  
+.respNavBar .icon {
+    display: none;
+}
+  
+@media screen and (max-width: 600px) {
+    .respNavBar a:not(:first-child) {display: none;}
+    .respNavBar a.icon {
+      float: right;
+      display: block;
+    }
+}
+  
+@media screen and (max-width: 600px) {
+    .respNavBar.responsive {position: relative;}
+    .respNavBar.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+}
+
+.respNavBar.responsive a {
+      float: none;
+      display: block;
+      text-align: center;
+    }
+}
 /* End of navbar */
 
 #logo {
@@ -323,4 +379,31 @@ body {
     font-size: 1.4rem;
     box-shadow: 4px 4px 4px 4px rgb(26, 61, 61);
     font-weight: 800;
+}
+
+@media screen and (max-width: 600px) {
+    #title {
+        font-size: 17px;
+        line-height: 1.3rem;
+        margin-top: 6px;
+        margin-left: 13px;
+        z-index: 2;
+    }
+
+    #logo {
+        width: 8vh;
+        /* margin: 0; */
+        margin-top: 5px;
+        margin-left: 5px;
+        z-index: 2;
+    }
+
+    section {
+        transform: translate(0, 20%);
+    }
+
+    #button-div {
+        margin-top: 2vh;
+        transform: translate(0, 1000%);
+    }
 }
