@@ -382,6 +382,16 @@ body {
 }
 
 @media screen and (max-width: 600px) {
+    body {
+        max-width: 80vw;
+        max-height: 100vh;
+    }
+
+    .container {
+        max-width: 110%;
+        max-height: 110%;
+    }
+
     #title {
         font-size: 17px;
         line-height: 1.3rem;
