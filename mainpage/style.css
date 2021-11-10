@@ -642,7 +642,7 @@ h2 span:hover {
 
     .goLeft {
         position: static;
-        min-width: 90vw;
+        min-width: 94vw;
         height: auto;
         margin-top: -25vh;
     }
@@ -668,7 +668,7 @@ h2 span:hover {
 
     section div img {
         position: relative;
-        min-width: 90vw;
+        min-width: 94vw;
     }
 
     section div p {
