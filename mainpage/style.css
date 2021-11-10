@@ -647,7 +647,7 @@ h2 span:hover {
     }
     
     #aboutUsID {
-        margin-top: -13vh;
+        margin-top: -4vh;
     }
 
     section {
@@ -660,8 +660,6 @@ h2 span:hover {
         font-size: 1.25rem;
         line-height: 1.5rem;
     }
-
-
 
     section div img {
         position: relative;
@@ -731,5 +729,9 @@ h2 span:hover {
         max-width: 7vw;
         margin-left: -0.75vw;
         margin-right: 5vw;
+    }
+
+    .injured h2 {
+        margin-bottom: 3vh;
     }
 }
