@@ -282,3 +282,7 @@ body {
         transform: translate(0, 1000%);
     }
 }
+
+    .feather:hover {
+        background: linear-gradient(to bottom, transparent 0%, transparent 0%, var(--body) 30%);
+    }
