@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,75 +8,39 @@
     <title>Madárkórház</title>
 
     <link rel="stylesheet" href="./style.css">
-    <link rel="icon" type="image/png" href="./sources/icons8-bird-64.png"/>
+    <link rel="icon" type="image/png" href="./sources/icons8-bird-64.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@100;200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@100;200;300;400;500;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
-    <!-- <header> -->
+
+<body onresize="resizeEvent()">
+    <header>
         <img src="./sources/logo-modified.png" alt="Logo" id="logo">
         <p id="title">Hortobágyi Madárpark -
             <br>
             Madárkórház Alapítvány
         </p>
-    <!-- </header> -->
-    <nav class="navbar">
-        <a href="mainpage/about.html">Rólunk</a>
-    
-        <div class="dropdown">
-            <button class="dropbtn">Madármentés 
-              <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-              <a href="#">Rólunk</a>
-              <a href="#">Módszereink</a>
-              <a href="#">Galéria</a>
-            </div>
-        </div> 
+    </header>
 
-        <div class="dropdown">
-            <button class="dropbtn">Támogatás
-              <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-              <a href="mainpage/foundation.html">1%</a>
-              <a href="#">Örökbefogadás</a>
-              <a href="#">Önkéntes munka</a>
-            </div>
-        </div> 
-
-        <div class="dropdown">
-            <button class="dropbtn">Események
-              <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-                <a href="#">Hírek</a>
-              <a href="#">Jegyárak, információk</a>
-              <a href="#">Daruvonulás 2021</a>
-              <a href="mainpage/events.html">Események</a>
-              <a href="#">Varjúsimogatás</a>
-              <a href="#">Hát ez elég fasza</a>
-            </div>
-        </div> 
-
-        <a href="mainpage/contact.html">Kapcsolat</a>
-    </nav>
-
-   <section>
-    <div class="container">
-        <div class="body"></div>
-       <div class="mouth"></div>
-        <div class="beak"></div>
-        <div class="feather"></div>
-       <div class="tail"></div>
-          <div class="leg"></div>
     </div>
-    <div id="button-div">
-        <button id="button-action" onclick="window.open('./mainpage/index.html', '_self')">Tudj meg többet rólunk! 
+    <section>
+        <div class="container">
+            <div class="body"></div>
+            <div class="mouth"></div>
+            <div class="beak"></div>
+            <div class="feather"></div>
+            <div class="tail"></div>
+            <div class="leg"></div>
+        </div>
+        <div id="button-div">
+            <button id="button-action" onclick="window.open('./mainpage/index.html', '_self')">Tudj meg többet rólunk!
 
-        </button>
-    </div>
-   </section> 
+            </button>
+        </div>
+    </section>
 </body>
 </html>
