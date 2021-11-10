@@ -661,9 +661,16 @@ h2 span:hover {
         line-height: 1.5rem;
     }
 
+
+
     section div img {
         position: relative;
         min-width: 90vw;
+    }
+
+    section div p {
+        font-size: 1rem;
+        line-height: 1.5rem;
     }
 
     .goCenter img {
@@ -679,6 +686,9 @@ h2 span:hover {
         font-size: 0.8rem;
     }
 
+    div.goCenter h2 {
+        font-size: 1.25rem;
+    }
 
     iframe {
         width: 300px;
