@@ -13,18 +13,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@100;200;300;400;500;700;800;900&display=swap" rel="stylesheet">
 
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <script src="../mainpage/script.js"></script>
   
 </head>
-<body>
+<body onresize="resizeEvent()">
      <header>
-        <img src="../sources/logo-modified.png" alt="Logo" id="logo">
-        <p id="title">Hortobágyi Madárpark -
-            <br>
-            Madárkórház Alapítvány
-        </p>
         <nav class="navbar" id="mynav">
             <a href="#">Rólunk</a>
             
@@ -60,7 +55,7 @@
                     <a href="#">Daruvonulás 2021</a>
                     <a href="#">Események</a>
                     <a href="#">Varjúsimogatás</a>
-                    <a href="#">Hát ez elég fasza</a>
+                    <!-- <a href="#">Hát ez elég fasza</a> -->
                 </div>
             </div> 
             
@@ -80,12 +75,34 @@
                 <div class="bird bird--four"></div>
             </div>
         </div>
+
+        <div id="myRespNavBar" class="respNavBar">
+            <a href="#">Rólunk</a>
+            <a href="#">Madármentés</a>
+            <a href="#">Támogatás</a>
+            <a href="#">Események</a>
+            <a href="#">Kapcsolat</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
     </header>
+
+    <div>
+        <img src="../sources/logo-modified.png" alt="Logo" id="logo">
+        <p id="title">Hortobágyi Madárpark -
+            <br>
+            Madárkórház Alapítvány
+        </p>
+    </div>
         
     <section>
         <div class="goLeft">
             <h2>Üdvözlünk a Hortobágyi Madárpark honlapján!</h2>
-            <p>Alapítványunk közhasznú, természetvédelmi tevékenységének célja első sorban védett madarak állatorvosi gyógykezelése, állatkórházi ellátása, gyógyulásuk után a szabad természetbe való visszahelyezése<a href="./about.html">[...]</a></p>
+            <p>Alapítványunk közhasznú, természetvédelmi tevékenységének célja első sorban védett madarak állatorvosi gyógykezelése, állatkórházi ellátása, gyógyulásuk után a szabad természetbe való visszahelyezése.
+            <br>
+            <a href="./about.html">Tovább</a>
+        </p>
             
             <!-- <p>Célunk továbbá e tevékenységekkel kapcsolatos tudományos kutatás végzése, a tevékenység bemutatása és oktatása, a feladatok ellátására intézmény, elsősorban madárkórház létrehozása és üzemeltetése</p> -->
             <div class="goRight"><img class="birdPic" src="../sources/3.jpg" alt="Egy cuki kismadár" class="picture"></div>
@@ -94,8 +111,10 @@
     <section>
         <div class="goLeft">
             <h2>Madármentés</h2>
-            <p>Rengeteg bejelentés, érdeklődés érkezik hozzánk ügyeleti számunkon. Kell e menteni? Mit csináljunk amíg át nem tudjuk adni a madarat valamely illetékesnek?
-            Tényleg kiesett a fészekből és segítségre szorul a fióka? Vagy fészekhagyó és szüleiről szakítjuk el, ha magunkhoz vesszük?<a href="./saving-birds.html">[...]</a>
+            <p>Rengeteg bejelentés, érdeklődés érkezik hozzánk ügyeleti számunkon. Kell-e menteni? Mit csináljunk amíg át nem tudjuk adni a madarat valamely illetékesnek?
+            Tényleg kiesett a fészekből és segítségre szorul a fióka? Vagy fészekhagyó és szüleiről szakítjuk el, ha magunkhoz vesszük?
+            <br>
+            <a href="./saving-birds.html">Tovább</a>
             </p>
             <div class="goRight">
                 <img id="negro" class="birdPic" src="../sources/2.jpg" alt="Szevasz Negró!" onclick="window.open('https://www.youtube.com/watch?v=8s9Jh5DJmAc', '_blank')" class="picture">
@@ -106,7 +125,10 @@
     <section>
         <div class="goLeft">
             <h2>Támogatás</h2>
-            <p>Az ország minden részéből érkeznek sérült, beteg, védett-fokozottan védett madarak, melyek /túlnyomórészt sebészeti/ állatorvosi ellátása, utókezelése és teljes gyógyulása után, a jelenlegi feltételek között, mintegy 40%-ban visszavadításra kerülnek, ezután szabadon engedjük őket. Mindezt támogatásokból, Adó 1% felajánlásokból tesszük, amihez ön is hozzájárulhat<a href="./aid.html">[...]</a></p>
+            <p>Az ország minden részéből érkeznek sérült, beteg, védett-fokozottan védett madarak, melyek /túlnyomórészt sebészeti/ állatorvosi ellátása, utókezelése és teljes gyógyulása után, a jelenlegi feltételek között, mintegy 40%-ban visszavadításra kerülnek, ezután szabadon engedjük őket. Mindezt támogatásokból, Adó 1% felajánlásokból tesszük, amihez ön is hozzájárulhat.
+            <br>
+            <a href="./aid.html">Tovább</a>
+            </p>
             <div class="goRight">
                 <img class="birdPic" src="../sources/1.jpg" alt="1%" class="picture">
             </div>
