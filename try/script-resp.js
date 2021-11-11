@@ -15,11 +15,11 @@ function version() {
   // console.log(myRespNavBar);
 
   if (w<600) {
-    // console.log(w);
+    console.log(w);
     navBarSel.style.display = "none";
     myRespNavBar.style.display = "block";
   } else {
-    // console.log(w);
+    console.log(w);
     navBarSel.style.display = "block";
     myRespNavBar.style.display = "none";
   }
@@ -28,7 +28,7 @@ function version() {
 function resizeEvent() {
   var w = window.innerWidth;
   // console.log(w);
-  var navBarSel = document.getElementsByTagName("mynav");
+  var navBarSel = document.getElementById("mynav");
   var myRespNavBar = document.getElementById("myRespNavBar");
   // console.log(myRespNavBar);
 
