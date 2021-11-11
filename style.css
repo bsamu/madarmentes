@@ -15,6 +15,8 @@ select{appearance: none !important; -webkit-appearance: none !important; border-
 
 /* end of css reset */
 
+/* A bird-animation eredetijet innen szedtuk: "https://codepen.io/__akash__19/pen/QWKpyMm", amit kicsit szerkesztettunk. */
+
 :root {
     --body: /*#ff533e; */ #000000;
     --mouth: #000000;
